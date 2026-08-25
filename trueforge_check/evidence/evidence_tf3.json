@@ -1,0 +1,157 @@
+{
+ "delivery_target": 3838953010386436096,
+ "github_before": [
+  [
+   3838953010386436096,
+   530,
+   false
+  ],
+  [
+   3838951875992887296,
+   200,
+   true
+  ],
+  [
+   3838951636103864320,
+   502,
+   false
+  ],
+  [
+   3838950303252611072,
+   500,
+   false
+  ],
+  [
+   3838950288312500224,
+   200,
+   false
+  ]
+ ],
+ "session_id": "01m0w86074642a7f9s04ddqdg5",
+ "turn1_id": "01m0w86079t2e7ap8m5rqefyvr.local",
+ "turn1_status": "done",
+ "approval_required_event_count": 1,
+ "approval_required_events": [
+  {
+   "type": "tool.approval_required",
+   "id": "01m0w87d2w80484apkc5dny72n",
+   "created_at": "2026-08-25T10:42:30.620Z",
+   "thread_id": "main",
+   "tool_calls": [
+    {
+     "id": "call_b5cccc51207d46eca0ea9825",
+     "source_event_id": "01m0w873fv3s6tr22npcyss9y5"
+    }
+   ]
+  }
+ ],
+ "agent_gated_calls": [
+  {
+   "id": "call_b5cccc51207d46eca0ea9825",
+   "args": "{\"input\":{\"delivery_id\": \"3838953010386436096\", \"hook_id\": \"670245925\"},\"mcp_server\":\"redrive-github\",\"tool_name\":\"redeliver_webhook_delivery\"}"
+  }
+ ],
+ "github_while_paused": [
+  [
+   3838953010386436096,
+   530,
+   false
+  ],
+  [
+   3838951875992887296,
+   200,
+   true
+  ],
+  [
+   3838951636103864320,
+   502,
+   false
+  ],
+  [
+   3838950303252611072,
+   500,
+   false
+  ],
+  [
+   3838950288312500224,
+   200,
+   false
+  ]
+ ],
+ "unchanged_while_paused": true,
+ "decision_type": "programmatic operator via TrueForge official approval API (user.tool_approval input); NO human click this spike",
+ "gated_tool_args_raw": "{\"input\":{\"delivery_id\": \"3838953010386436096\", \"hook_id\": \"670245925\"},\"mcp_server\":\"redrive-github\",\"tool_name\":\"redeliver_webhook_delivery\"}",
+ "approval_required_event": {
+  "type": "tool.approval_required",
+  "id": "01m0w87d2w80484apkc5dny72n",
+  "created_at": "2026-08-25T10:42:30.620Z",
+  "thread_id": "main",
+  "tool_calls": [
+   {
+    "id": "call_b5cccc51207d46eca0ea9825",
+    "source_event_id": "01m0w873fv3s6tr22npcyss9y5"
+   }
+  ]
+ },
+ "turn1_required_actions": [
+  {
+   "type": "tool.approval_required",
+   "id": "01m0w87d2w80484apkc5dny72n",
+   "created_at": "2026-08-25T10:42:30.620Z",
+   "thread_id": "main",
+   "tool_calls": [
+    {
+     "id": "call_b5cccc51207d46eca0ea9825",
+     "source_event_id": "01m0w873fv3s6tr22npcyss9y5"
+    }
+   ]
+  }
+ ],
+ "github_still_unchanged_pre_approval": false,
+ "turn2_id": "01m0w8h5n00c6wwatj2b6gykmm.local",
+ "turn2_status": "done",
+ "turn2_tool_responses": [
+  "{\n  \"http_status\": 202,\n  \"body\": {}\n}"
+ ],
+ "redelivery_http_status": 202,
+ "turn2_final": "Done \u2014 both steps completed successfully.\n\n## Step 1: Inspection (`get_webhook_delivery`)\n\n**Delivery `3838953010386436096`** on hook `670245925`:\n\n| Field | Value |\n|---|---|\n| Event | `push` |\n| Status | **Invalid HTTP Response: 530** \u274c |\n| Delivered at | 2026-08-25T09:56:40.78Z |\n| Duration | 0.21s |\n| Redelivery? | No (original attempt) |\n| Receiver URL | `https://oasis-lamb-remain-broad.trycl",
+ "github_after": [
+  [
+   3838959604597792768,
+   502,
+   true
+  ],
+  [
+   3838953010386436096,
+   530,
+   false
+  ],
+  [
+   3838951875992887296,
+   200,
+   true
+  ],
+  [
+   3838951636103864320,
+   502,
+   false
+  ],
+  [
+   3838950303252611072,
+   500,
+   false
+  ],
+  [
+   3838950288312500224,
+   200,
+   false
+  ]
+ ],
+ "new_redelivery_records": [
+  [
+   3838959604597792768,
+   502,
+   true
+  ]
+ ]
+}

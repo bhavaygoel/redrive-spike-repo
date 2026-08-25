@@ -1,0 +1,50 @@
+{
+ "receiver_initial_state": {
+  "mutations": [],
+  "deliveries": [],
+  "count": 0
+ },
+ "tunnel_url": "https://inclusive-medication-flag-herb.trycloudflare.com",
+ "hook_repoint_status": 200,
+ "session_id": "01m0w90wy0wkp45s254anv1pkm",
+ "turn1_id": "01m0w90wy4h83caszj8x8q2745.local",
+ "paused_with_required_actions": true,
+ "receiver_state_while_paused": {
+  "mutations": [],
+  "deliveries": [],
+  "count": 0
+ },
+ "turn2_id": "01m0w92tfqa3587ty40a7jsfex.local",
+ "turn2_status": "done",
+ "mcp_redeliver_response": {
+  "http_status": 202,
+  "body": {}
+ },
+ "new_redelivery_record": {
+  "id": 3838960848873734144,
+  "guid": "44c70d9c-a06b-11f1-914c-d186f381ed14",
+  "event": "push",
+  "status_code": 200,
+  "delivered_at": "2026-08-25T10:57:30.868Z",
+  "redelivery": true
+ },
+ "receiver_state_final": {
+  "mutations": [
+   {
+    "id": 1,
+    "event_id": "44c70d9c-a06b-11f1-914c-d186f381ed14",
+    "kind": "order_payment_processed",
+    "order_ref": "bhavaygoel/redrive-spike-repo@f17746091627",
+    "received_at": "2026-08-25T10:57:29.904420Z"
+   }
+  ],
+  "deliveries": [
+   {
+    "delivery_id": "44c70d9c-a06b-11f1-914c-d186f381ed14",
+    "status": "done",
+    "updated_at": "2026-08-25T10:57:29.904582Z"
+   }
+  ],
+  "count": 1
+ }
+}

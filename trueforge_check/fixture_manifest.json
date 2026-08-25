@@ -1,0 +1,17 @@
+{
+ "fixture": "captured_body.bin",
+ "bytes": 8116,
+ "sha256": "593db1938a19dcb8a954775e511e94f5e9b5d6db91e5350b92f58c6d64f0afd5",
+ "stored_signature": "sha256=47088636e24a8c5591b271a04b4ca263168e8565ac4fb02b7368ce1497dffb74",
+ "recomputed_hmac_matches_stored": true,
+ "delivery_id_original_failure": 3838953010386436096,
+ "guid_of_530_delivery": "44c70d9c-a06b-11f1-914c-d186f381ed14",
+ "flagship_failed_delivery": {
+  "id": 3838950303252611072,
+  "guid": "5558bf00-a068-11f1-93e3-0cea5052a583",
+  "status": 500
+ },
+ "buggy_revision_sha": "e3157af",
+ "trigger_push_sha": "d2af71a",
+ "fix_commit_sha": "e86ce71"
+}

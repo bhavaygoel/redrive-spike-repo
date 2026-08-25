@@ -1,0 +1,28 @@
+{
+ "concurrent_fixed": {
+  "codes_10x": [
+   "ERR",
+   200,
+   "ERR",
+   200,
+   "ERR",
+   "ERR",
+   "ERR",
+   "ERR",
+   "ERR",
+   "ERR"
+  ],
+  "mutations": 1,
+  "ledger_done": 1
+ },
+ "invalid_sig_buggy": {
+  "http": 500,
+  "mutations": 1
+ },
+ "invalid_sig_fixed": {
+  "http_bad": 200,
+  "http_valid_control": 200,
+  "mutations": 1,
+  "ledger_done": 1
+ }
+}

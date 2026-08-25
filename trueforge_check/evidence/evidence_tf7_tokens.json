@@ -1,0 +1,10 @@
+[
+ {
+  "event_type": "tool.response",
+  "content": "{\"success\":true,\"response\":{\"exitCode\":0,\"result\":\"HTTP1=200\\nHTTP2=200\\n---rec.log tail---\\n  datetime.datetime.utcnow().isoformat() + \\\"Z\\\"))\\n/workspace/repo/receiver_fixed.py:110: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\\n  (datetime.datetime.utcnow().isoformat() + \\\"Z\\\", delivery))\\n[receiver-fixed] MUTATION committed once event_id=44c70d9c-a06b-11f1-914c-d186f381ed14\\n[receiver-fixed] 127.0.0.1 \\\"POST /webhook HTTP/1.1\\\" 200 -\\n[receiver-fixed] event=push delivery=44c70d9c-a06b-11f1-914c-d186f381ed14 sig_ok=False bytes=8116\\n[receiver-fixed] REPLAY of done delivery 44c70d9c-a06b-11f1-914c-d186f381ed14 -> safe no-op\\n[receive"
+ },
+ {
+  "event_type": "tool.response",
+  "content": "{\"success\":true,\"response\":{\"exitCode\":0,\"result\":\"COUNT=1\\nLEDGER=1\\n---rows---\\nmutation: (1, '44c70d9c-a06b-11f1-914c-d186f381ed14', 'order_payment_processed', 'bhavaygoel/redrive-spike-repo@d2af71adc3b9')\\ndelivery: ('44c70d9c-a06b-11f1-914c-d186f381ed14', 'done')\\n\"}}"
+ }
+]
