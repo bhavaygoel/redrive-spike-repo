@@ -1,0 +1,31 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: redrive
+      POSTGRES_PASSWORD: redrive_pw
+      POSTGRES_DB: redrive
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U redrive -d redrive"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  app:
+    build: .
+    environment:
+      PGHOST: db
+      PGPORT: "5432"
+      PGUSER: redrive
+      PGPASSWORD: redrive_pw
+      PGDATABASE: redrive
+    ports:
+      - "8092:8092"
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  pgdata:
