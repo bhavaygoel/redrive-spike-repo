@@ -1,2 +1,2 @@
 # redrive-spike-repo
-Redrive hackathon spike - disposable (safe to delete)
+Disposable spike repo for Redrive webhook incident reproduction.
