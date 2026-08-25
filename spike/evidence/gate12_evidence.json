@@ -1,0 +1,54 @@
+{
+  "repo": "bhavaygoel/redrive-spike-repo",
+  "tunnel_url": "https://oasis-lamb-remain-broad.trycloudflare.com",
+  "hook_id": 670245925,
+  "hook_url": "https://oasis-lamb-remain-broad.trycloudflare.com/webhook",
+  "hook_created_at": "2026-08-25T09:35:32Z",
+  "ping_event": "https://api.github.com/repos/bhavaygoel/redrive-spike-repo/hooks/670245925/pings",
+  "trigger_commit": "d2af71adc3b9c2fff8ec7305038b51f97de53dab",
+  "deliveries": [
+    {
+      "id": 3838950303252611072,
+      "guid": "5558bf00-a068-11f1-93e3-0cea5052a583",
+      "event": "push",
+      "status": "500 ",
+      "status_code": 500,
+      "action": null,
+      "delivered_at": "2026-08-25T09:35:40.128Z",
+      "redelivery": false
+    },
+    {
+      "id": 3838950288312500224,
+      "guid": "51049398-a068-11f1-9fc8-080eca0ddd9b",
+      "event": "ping",
+      "status": "OK",
+      "status_code": 200,
+      "action": null,
+      "delivered_at": "2026-08-25T09:35:33.156Z",
+      "redelivery": false
+    }
+  ],
+  "gate1_failed_push_delivery": {
+    "id": 3838950303252611072,
+    "guid": "5558bf00-a068-11f1-93e3-0cea5052a583",
+    "delivered_at": "2026-08-25T09:35:40.128Z",
+    "status": "500 ",
+    "status_code": 500
+  },
+  "receiver_mutations_after_real_delivery": {
+    "count": 1,
+    "rows": [
+      [
+        1,
+        "5558bf00-a068-11f1-93e3-0cea5052a583",
+        "bhavaygoel/redrive-spike-repo@d2af71adc3b9"
+      ]
+    ]
+  },
+  "gate2": {
+    "payload_bytes": 8457,
+    "payload_encoding": "json-object",
+    "signature_match_replay_fidelity": true,
+    "response_body_returned_by_api": "{\"error\": \"downstream payment-notify service unavailable (simulated)\", \"note\": \"mutation already committed\"}"
+  }
+}

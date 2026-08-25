@@ -1,0 +1,22 @@
+{
+  "captured_delivery": {
+    "guid": "5558bf00-a068-11f1-93e3-0cea5052a583",
+    "event": "push",
+    "bytes": 8116,
+    "signature_verified_fixture": true
+  },
+  "results": {
+    "buggy": {
+      "attempt1_http": 500,
+      "attempt1_mutations": 1,
+      "replay_http": 500,
+      "replay_mutations": 2
+    },
+    "fixed": {
+      "attempt1_http": 200,
+      "attempt1_mutations": 1,
+      "replay_http": 200,
+      "replay_mutations": 1
+    }
+  }
+}

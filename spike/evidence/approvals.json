@@ -1,0 +1,14 @@
+{
+  "redrive-gate5-redelivery-001": {
+    "tool": "redeliver_webhook_delivery",
+    "args": {
+      "hook_id": 670245925,
+      "delivery_id": 3838950303252611072
+    },
+    "status": "approved",
+    "requested_at": "2026-08-25T09:47:42Z",
+    "decided_at": "2026-08-25T09:47:50Z",
+    "decided_by": "AUTOMATED TEST OPERATOR (spike only)",
+    "note": "spike: automated operator; real demo must be human-in-the-loop"
+  }
+}

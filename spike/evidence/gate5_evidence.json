@@ -1,0 +1,76 @@
+{
+  "approval_request_id": "redrive-gate5-redelivery-001",
+  "pre": {
+    "github_push_deliveries": [
+      [
+        3838951636103864320,
+        502,
+        false
+      ],
+      [
+        3838950303252611072,
+        500,
+        false
+      ],
+      [
+        3838950288312500224,
+        200,
+        false
+      ]
+    ],
+    "receiver_mutations": 1
+  },
+  "phaseA_blocked": {
+    "denied": true,
+    "github_unchanged": [
+      [
+        3838951636103864320,
+        502,
+        false
+      ],
+      [
+        3838950303252611072,
+        500,
+        false
+      ],
+      [
+        3838950288312500224,
+        200,
+        false
+      ]
+    ],
+    "note": "no HTTP request left the machine; approval required"
+  },
+  "phaseB_executed": {
+    "mcp_result": {
+      "status": 202
+    }
+  },
+  "redriven_delivery": {
+    "id": 3838951875992887296,
+    "guid": "5558bf00-a068-11f1-93e3-0cea5052a583",
+    "event": "push",
+    "status_code": 200,
+    "redelivery": true,
+    "delivered_at": "2026-08-25T09:47:52.521Z"
+  },
+  "final": {
+    "transport_http": 200,
+    "transport_ok": true,
+    "mutations": 1,
+    "mutation_rows": [
+      [
+        1,
+        "5558bf00-a068-11f1-93e3-0cea5052a583"
+      ]
+    ],
+    "ledger": [
+      [
+        "5558bf00-a068-11f1-93e3-0cea5052a583",
+        "done"
+      ]
+    ],
+    "business_ok": true,
+    "state_endpoint_count": 1
+  }
+}

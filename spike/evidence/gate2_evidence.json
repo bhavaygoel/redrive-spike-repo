@@ -1,0 +1,32 @@
+{
+  "delivery_id": 3838950303252611072,
+  "guid": "5558bf00-a068-11f1-93e3-0cea5052a583",
+  "event": "push",
+  "status_code": 500,
+  "delivered_at": "2026-08-25T09:35:40.128Z",
+  "redelivery_flag": false,
+  "request_headers_returned_by_api": {
+    "Accept": "*/*",
+    "Content-Type": "application/json",
+    "User-Agent": "GitHub-Hookshot/413197b",
+    "X-Github-Delivery": "5558bf00-a068-11f1-93e3-0cea5052a583",
+    "X-Github-Event": "push",
+    "X-Github-Hook-Id": "670245925",
+    "X-Github-Hook-Installation-Target-Id": "1345932290",
+    "X-Github-Hook-Installation-Target-Type": "repository",
+    "X-Hub-Signature": "sha1=2d66490e6b86a6e9612ae0c60586a5a16df01341",
+    "X-Hub-Signature-256": "sha256=47088636e24a8c5591b271a04b4ca263168e8565ac4fb02b7368ce1497dffb74"
+  },
+  "payload_encoding": "json-object",
+  "payload_bytes": 8457,
+  "signature_match_replay_fidelity": false,
+  "response_body_returned_by_api": "{\"error\": \"downstream payment-notify service unavailable (simulated)\", \"note\": \"mutation already committed\"}",
+  "attempt_history_available_via_redelivery_flag_and_deliveries_list": true,
+  "byte_exactness": {
+    "method": "payload returned as JSON object; compact separators re-serialization reproduces wire bytes",
+    "recomputed_sig_matches_stored_X-Hub-Signature-256": true,
+    "stored_sig": "sha256=47088636e24a8c5591b271a04b4ca263168e8565ac4fb02b7368ce1497dffb74",
+    "recomputed_sig": "sha256=47088636e24a8c5591b271a04b4ca263168e8565ac4fb02b7368ce1497dffb74",
+    "fixture_bytes": 8116
+  }
+}

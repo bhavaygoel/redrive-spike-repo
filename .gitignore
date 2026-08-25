@@ -1,3 +1,11 @@
 __pycache__/
 *.db
+*.db-*
 webhook_secret.txt
+.gh_token
+device_flow.json
+tunnel_url.txt
+hook_id.txt
+prod_db_path.txt
+logs/
+cloudflared

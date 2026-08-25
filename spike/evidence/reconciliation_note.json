@@ -1,0 +1,11 @@
+{
+  "reconciled": true,
+  "kept_rows": [
+    [
+      1,
+      "5558bf00-a068-11f1-93e3-0cea5052a583",
+      "2026-08-25T09:35:40.018310Z"
+    ]
+  ],
+  "rationale": "row id=2 was spike-harness artifact (wrong-cwd sandbox write), not a provider delivery"
+}
