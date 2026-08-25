@@ -1,0 +1,10 @@
+{
+ "session_id": "01m0xbnt0n7cp2vav3ba5vbq1c",
+ "sandbox_ids": [
+  "v1:daytona:default.b1e8ab64-d0b9-486a-b2e2-d3523a2e2b72"
+ ],
+ "docker_version": null,
+ "compose_version": null,
+ "docker_info": null,
+ "os": null
+}

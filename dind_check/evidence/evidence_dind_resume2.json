@@ -1,0 +1,18 @@
+{
+ "session_id": "01m0xc760sspj9exsc93nc171s",
+ "turn_id": "01m0xcrfe6rv244q3k7vcdrv3t.local",
+ "tokens": {
+  "GIT_SHA": "GIT_SHA=577886a528194016cfc763b80503c952865f8627",
+  "COMPOSE_PS": "COMPOSE_PS=<NOT OBTAINED \u2014 STEP 4 failed>",
+  "APP_HEALTH": "APP_HEALTH=<NOT RUN \u2014 stopped after STEP 4 failure>",
+  "APP_HTTP_CODE": "APP_HTTP_CODE=<NOT RUN \u2014 stopped>",
+  "APP_BODY": "APP_BODY=<NOT RUN \u2014 stopped>",
+  "DB_ROW_COUNT": "DB_ROW_COUNT=<NOT RUN \u2014 stopped>",
+  "DB_ROWS": "DB_ROWS=<NOT RUN \u2014 stopped>",
+  "COLD_SECONDS": "COLD_SECONDS=<NOT RUN \u2014 stopped>",
+  "RESTART_PS": "RESTART_PS=<NOT RUN \u2014 stopped>",
+  "HEALTH_AFTER": "HEALTH_AFTER=<NOT RUN \u2014 stopped>",
+  "ROWS_AFTER_RESTART": "ROWS_AFTER_RESTART=<NOT RUN \u2014 stopped>"
+ },
+ "status": "done"
+}

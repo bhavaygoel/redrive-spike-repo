@@ -1,0 +1,19 @@
+{
+ "session_id": "01m0xc760sspj9exsc93nc171s",
+ "turn_id": "01m0xdh4w2vm2k7gam94hcdq88.local",
+ "tokens": {
+  "GIT_SHA": "GIT_SHA=6f607c6",
+  "COMPOSE_PS": "COMPOSE_PS=",
+  "APP_HEALTH": "APP_HEALTH={\"status\": \"ok\", \"db\": \"up\"}",
+  "APP_HTTP_CODE": "APP_HTTP_CODE=200",
+  "APP_BODY": "APP_BODY={\"id\": 1, \"order_ref\": \"dind-gate-test-1\"}",
+  "DB_ROW_COUNT": "DB_ROW_COUNT=1",
+  "DB_ROWS": "DB_ROWS=",
+  "COLD_SECONDS": "COLD_SECONDS=23",
+  "RESTART_PS": "RESTART_PS=",
+  "HEALTH_AFTER": "HEALTH_AFTER={\"status\": \"ok\", \"db\": \"up\"}",
+  "SECOND_POST_CODE": "SECOND_POST_CODE=200",
+  "ROWS_AFTER_RESTART": "ROWS_AFTER_RESTART=2"
+ },
+ "status": "done"
+}
