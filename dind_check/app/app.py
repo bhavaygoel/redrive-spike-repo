@@ -20,14 +20,22 @@ PG = dict(
     dbname=os.environ.get("PGDATABASE", "redrive"),
 )
 
-def db_connect():
-    return psycopg2.connect(**PG)
+def query(sql, params=(), fetch=False):
+    """Run one statement on its own connection; commit on success."""
+    conn = psycopg2.connect(**PG)
+    try:
+        cur = conn.cursor()
+        cur.execute(sql, params)
+        rows = cur.fetchall() if fetch else None
+        conn.commit()
+        return rows
+    finally:
+        conn.close()
 
 def init_db():
     for attempt in range(60):
         try:
-            with db_connect() as c:
-                c.execute("""CREATE TABLE IF NOT EXISTS webhook_events(
+            query("""CREATE TABLE IF NOT EXISTS webhook_events(
                         id SERIAL PRIMARY KEY,
                         order_ref TEXT NOT NULL,
                         received_at TIMESTAMPTZ NOT NULL DEFAULT now())""")
@@ -51,8 +59,7 @@ class Handler(BaseHTTPRequestHandler):
         if self.path != "/health":
             return self._json(404, {"error": "not found"})
         try:
-            with db_connect() as c:
-                c.execute("SELECT 1")
+            query("SELECT 1")
             return self._json(200, {"status": "ok", "db": "up"})
         except Exception as e:
             return self._json(503, {"status": "degraded", "db": str(e)[:120]})
@@ -67,11 +74,10 @@ class Handler(BaseHTTPRequestHandler):
             return self._json(400, {"error": "bad json"})
         order_ref = str(data.get("order_ref", "unknown"))[:200]
         try:
-            with db_connect() as c:
-                c.execute(
-                    "INSERT INTO webhook_events(order_ref) VALUES (%s) RETURNING id",
-                    (order_ref,))
-                row_id = c.fetchone()[0]
+            rows = query(
+                "INSERT INTO webhook_events(order_ref) VALUES (%s) RETURNING id",
+                (order_ref,), fetch=True)
+            row_id = rows[0][0]
         except Exception as e:
             return self._json(500, {"error": str(e)[:200]})
         return self._json(200, {"id": row_id, "order_ref": order_ref})
